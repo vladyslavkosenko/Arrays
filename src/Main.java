@@ -46,8 +46,8 @@ public class Main {
         System.out.println("5. Вивести значення всіх парних індексів масиву");
 
         for (int i = 0; i < randomArr.length; i++) {
-            if (randomArr[i] % 2 == 0) {
-                System.out.println(randomArr[i]);
+            if (i % 2 == 0) {
+                System.out.println(i);
             }
 
         }
