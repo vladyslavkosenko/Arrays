@@ -11,7 +11,8 @@ public class Main {
 
         for (int i = 1; i < arr.length; i++) {
             if ((i % 2) == 0)
-                System.out.println(i);
+                arr[i] = i;
+            System.out.println(arr[i]);
         }
 
         System.out.println("2. Заповнити масив рандомними числами");
@@ -47,7 +48,7 @@ public class Main {
 
         for (int i = 0; i < randomArr.length; i++) {
             if (i % 2 == 0) {
-                System.out.println(i);
+                System.out.println(randomArr[i]);
             }
 
         }
