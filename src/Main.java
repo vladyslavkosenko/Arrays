@@ -7,20 +7,22 @@ public class Main {
 
         System.out.println("1. Заповнити масив тільки парними числами");
 
-        int[] arr = new int[15];
+        int[] arr = new int[10];
 
         for (int i = 1; i < arr.length; i++) {
-            if ((i % 2) == 0)
+            if ((i % 2) == 0 ) {
                 arr[i] = i;
-            System.out.println(arr[i]);
+                System.out.println(arr[i]);
+
+            }
+       
         }
 
         System.out.println("2. Заповнити масив рандомними числами");
         Random random = new Random();
         int[] randomArr = new int[10];
         for (int i = 0; i < randomArr.length; i++) {
-            int j = random.nextInt(10);
-            randomArr[i] = j;
+            randomArr[i] = random.nextInt(10);
             System.out.println(randomArr[i]);
         }
         System.out.println(" ");
