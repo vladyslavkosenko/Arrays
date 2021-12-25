@@ -6,20 +6,24 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("1. Заповнити масив тільки парними числами");
-
+        Random random = new Random();
         int[] arr = new int[10];
 
-        for (int i = 1; i < arr.length; i++) {
-            if ((i % 2) == 0 ) {
-                arr[i] = i;
-                System.out.println(arr[i]);
+        for (int s = 1; s < arr.length; s++) {
+            int a  = 1 + random.nextInt(10);
+            if ((a % 2) == 0 && a != 0){
+                arr[s] = a;
+               // System.out.println(arr[s]);
 
+            } else
+                if(a != 0)
+                arr[s] = a + 1;
             }
-       
+    for (int j = 1; j < arr.length; j++){
+            System.out.println(arr[j]);
         }
 
         System.out.println("2. Заповнити масив рандомними числами");
-        Random random = new Random();
         int[] randomArr = new int[10];
         for (int i = 0; i < randomArr.length; i++) {
             randomArr[i] = random.nextInt(10);
