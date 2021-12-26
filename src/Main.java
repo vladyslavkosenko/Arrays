@@ -10,16 +10,15 @@ public class Main {
         int[] arr = new int[10];
 
         for (int s = 1; s < arr.length; s++) {
-            int a  = 1 + random.nextInt(10);
-            if ((a % 2) == 0 && a != 0){
+            int a = 1 + random.nextInt(10);
+            if ((a % 2) == 0) {
                 arr[s] = a;
-               // System.out.println(arr[s]);
 
             } else
-                if(a != 0)
+
                 arr[s] = a + 1;
-            }
-    for (int j = 1; j < arr.length; j++){
+        }
+        for (int j = 1; j < arr.length; j++) {
             System.out.println(arr[j]);
         }
 
